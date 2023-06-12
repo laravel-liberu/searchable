@@ -37,5 +37,8 @@
                 "Search": "LaravelEnso\\Searchable\\Facades\\Search"
             }
         }
+    },
+    "require-dev": {
+        "rector/rector": "^0.17.0"
     }
 }
