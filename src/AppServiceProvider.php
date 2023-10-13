@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
 
         $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
 
-        $this->mergeConfigFrom(__DIR__.'/../config/searchable.php', 'enso.searchable');
+        $this->mergeConfigFrom(__DIR__.'/../config/searchable.php', 'liberu.searchable');
 
         return $this;
     }
@@ -31,8 +31,8 @@ class AppServiceProvider extends ServiceProvider
     private function publish()
     {
         $this->publishes([
-            __DIR__.'/../config' => config_path('enso'),
-        ], ['searchable-config', 'enso-config']);
+            __DIR__.'/../config' => config_path('liberu'),
+        ], ['searchable-config', 'liberu-config']);
 
         $this->publishes([
             __DIR__.'/../stubs/SearchServiceProvider.stub' => app_path('Providers/SearchServiceProvider.php'),

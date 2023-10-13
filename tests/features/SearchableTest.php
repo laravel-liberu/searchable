@@ -142,8 +142,8 @@ class SearchableTest extends TestCase
 
         $defaultPermission->roles()->attach(Auth::user()->role->id);
 
-        config(['enso.searchable.routes' => [self::DefaultPermission => 'test-icon']]);
-        config(['enso.searchable.models.SearchableTestModel.permissions' => null]);
+        config(['liberu.searchable.routes' => [self::DefaultPermission => 'test-icon']]);
+        config(['liberu.searchable.models.SearchableTestModel.permissions' => null]);
     }
 }
 

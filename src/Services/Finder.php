@@ -18,7 +18,7 @@ class Finder
     public function __construct(private string $search)
     {
         $this->models = Search::all();
-        $this->routes = new Collection(config('enso.searchable.routes'));
+        $this->routes = new Collection(config('liberu.searchable.routes'));
         $this->actions = [];
     }
 
@@ -47,9 +47,9 @@ class Finder
 
         return (new Service($query, $this->attributes($model), $this->search))
             ->relations($this->relations($model))
-            ->comparisonOperator(Config::get('enso.select.comparisonOperator'))
+            ->comparisonOperator(Config::get('liberu.select.comparisonOperator'))
             ->handle()
-            ->limit(Config::get('enso.searchable.limit'))
+            ->limit(Config::get('liberu.searchable.limit'))
             ->get();
     }
 
@@ -81,7 +81,7 @@ class Finder
     private function label($result, $model): string
     {
         $label = $this->models->get($model)['label']
-            ?? config('enso.searchable.defaultLabel');
+            ?? config('liberu.searchable.defaultLabel');
 
         return Collection::wrap(explode('.', $label))
             ->reduce(fn ($result, $attribute) => (string) $result->{$attribute}, $result);
