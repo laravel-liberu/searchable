@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\Searchable\Services;
+namespace LaravelLiberu\Searchable\Services;
 
 use Illuminate\Support\Collection;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\Searchable\Facades;
+namespace LaravelLiberu\Searchable\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

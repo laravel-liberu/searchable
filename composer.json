@@ -24,17 +24,17 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelEnso\\Searchable\\": "src/"
+            "LaravelLiberu\\Searchable\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelEnso\\Searchable\\AppServiceProvider",
-                "LaravelEnso\\Searchable\\SearchServiceProvider"
+                "LaravelLiberu\\Searchable\\AppServiceProvider",
+                "LaravelLiberu\\Searchable\\SearchServiceProvider"
             ],
             "aliases": {
-                "Search": "LaravelEnso\\Searchable\\Facades\\Search"
+                "Search": "LaravelLiberu\\Searchable\\Facades\\Search"
             }
         }
     },

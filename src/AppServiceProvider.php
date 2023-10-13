@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\Searchable;
+namespace LaravelLiberu\Searchable;
 
 use Illuminate\Support\ServiceProvider;
-use LaravelEnso\Searchable\Services\Search;
+use LaravelLiberu\Searchable\Services\Search;
 
 class AppServiceProvider extends ServiceProvider
 {
